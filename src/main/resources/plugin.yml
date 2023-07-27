@@ -1,0 +1,17 @@
+main: net.evolium.evodiscord.EvoDiscord
+name: EvoDiscord
+version: 1.0
+description: "This plugin is linking the Evolium discord bot to the Minecraft server"
+author: Palmus_
+softdepend: [Evolium]
+api-version: "1.20"
+commands:
+  discord:
+    description: Ability to send message from the server to the discord
+    permission: evodiscord.send
+    usage: /discord <message>
+
+permissions:
+  evodiscord.send:
+    default: op
+    description: Allow staff to send message from the server to the discord
